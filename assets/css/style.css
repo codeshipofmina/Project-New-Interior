@@ -1,0 +1,686 @@
+@font-face {
+    font-family: "Alegreya SC";
+    src: url(../fonts/Alegreya_SC/AlegreyaSC-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Alegreya Sans";
+    src: url(../fonts/Alegreya_Sans/AlegreyaSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Nixie One";
+    src: url(../fonts/Nixie_One/NixieOne-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+:root {
+    --main-padding: 6rem 13.5rem 0px 13.5rem;
+    --text-font-size: 1.4rem;
+    --line-height: 2rem;
+    --background-color: #CCCCCC;
+    --color-bluegrey: #3A4F52;
+    --color-grey: #6a6a6a;
+    --color-lightblue: #4DA7CA;
+    --color-hover: #02383AB2;
+    --color-behind-container: #00000033;
+    --color-input-button: #FFFFFF01;
+    --color-footer: #2B3E51;
+}
+
+
+/* #####             H E A D E R             ###### */
+
+header {
+    background-image: url(../img/image-header.png);
+    width: 100vw;
+    height: 100vh;
+    /* height: fit-content; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 88rem;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem 0px 3rem;
+}
+
+nav {
+    font-family: "Alegreya SC";
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+nav p:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.burger-menu {
+    height: 2.8rem;
+}
+
+.burger-menu:hover {
+    cursor: pointer;
+}
+
+.burger-menu div {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 1px;
+    width: 24px;
+    margin: 5px 0px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    /* height: 100%; */
+    /* padding: 286.8px 0px 81.62px 0px; */
+}
+
+.title h1 {
+    font-family: "Nixie One";
+    font-size: 5.6rem;
+    font-weight: 400;
+    line-height: 5.6rem;
+}
+
+.title h2 {
+    text-align: center;
+    font-family: "Alegreya SC";
+    font-size: 2.24rem;
+    font-weight: 400;
+    line-height: 2.24rem;
+    color: #FFFFFF80;
+}
+
+/* ! ---------------- Our Latest Works/From the Blog ---------------- */
+
+.our-latest-works,
+.from-the-blog {
+    padding: var(--main-padding);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    /* height: 332.59px; */
+}
+
+.our-latest-works h2,
+.from-the-blog h2 {
+    color: var(--color-bluegrey);
+    font-family: "Alegreya Sans";
+    font-size: 3.6rem;
+    font-weight: 500;
+    margin-bottom: 1.56rem;
+    /* line-height: 3.96rem; */
+
+}
+
+.our-latest-works p,
+.from-the-blog p {
+    color: var(--color-grey);
+    font-size: var(--text-font-size);
+    font-weight: 400;
+    /* line-height: 4rem; */
+}
+
+.view-all {
+    margin-top: 1.2rem;
+}
+
+.our-latest-works a,
+.from-the-blog a {
+    color: var(--color-bluegrey);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-decoration: none;
+    border: 1px solid var(--color-bluegrey);
+    padding: 1.2rem 1.68rem 1.3rem 1.7rem;
+    transition: 0.5s;
+}
+
+.view-all a:hover {
+    background-color: var(--color-hover);
+    color: white;
+}
+
+.from-the-blog {}
+
+.blog {
+    padding: var(--main-padding);
+    display: flex;
+    margin-bottom: 6rem;
+}
+
+.blog div {
+    padding: 0 1.5rem;
+}
+
+.blog img {
+    /* width: 36rem; */
+    margin-bottom: 1.rem;
+}
+
+.blog h2 {
+    color: var(--color-bluegrey);
+    font-family: "Alegreya Sans";
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.3rem;
+    margin-bottom: 1.6rem;
+}
+
+.blog p {
+    color: var(--color-grey);
+    font-family: "Helvetica Neue";
+    font-size: var(--text-font-size);
+    font-weight: 400;
+    line-height: 2rem;
+    margin-bottom: 1.9rem;
+}
+
+.blog span {
+    font-style: italic;
+}
+
+.blog a {
+    text-decoration: none;
+    color: var(--color-lightblue);
+    font-size: var(--text-font-size);
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+/* $ _______________ G R I D ________________ */
+
+
+/* * ich muss die images ins css packen i guess  */
+.grid-container {
+    padding: var(--main-padding);
+    padding-bottom: 9rem;
+    margin: 0 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+    /* overflow: hidden; */
+}
+
+/* .img1 {
+    background: url(../img/img3.png);
+} */
+
+.grid-images,
+.grid-overlay {
+    width: 36rem;
+    height: 21.5rem;
+    object-fit: cover;
+    display: flex;
+
+}
+
+/* .grid-images:nth-of-type(1) {
+    background: url(../img/img4.png);
+    object-fit: cover;
+
+}
+
+.grid-images:nth-of-type(2) {
+    background: url(../img/img5.png);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+} */
+
+.grid-overlay {
+    background-color: var(--color-hover);
+
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.text-overlay {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2rem;
+    width: 100%;
+    height: 100%;
+
+    padding: 1.5rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    opacity: 0;
+    transition: .5s ease;
+    /* transform: scale(1.1); */
+}
+
+.text-overlay p {
+    border: 1px solid white;
+    padding: 0.7rem 1.3rem;
+
+    opacity: 0;
+    transition: .5s ease;
+}
+
+
+.grid-overlay:hover,
+.text-overlay,
+.text-overlay p {
+    opacity: 1;
+    /* transform: scale(1.1); */
+    /* overflow: hidden; */
+
+}
+
+/*  % -------------- P A R A L L A X ------------- */
+
+.parallax-our-services {
+    padding: var(--main-padding);
+    padding-top: 8rem;
+    background-image: url(../img/parallax1.png);
+    /* height: 54.5rem; */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-get-a-free-quote {
+    padding: var(--main-padding);
+    padding-top: 8rem;
+    background-image: url(../img/img11.png);
+    height: 38.5rem;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.parallax-contact-us {
+    padding: var(--main-padding);
+    padding-bottom: 6rem;
+    padding-top: 8rem;
+    background-image: url(../img/img-footer.png);
+    height: fit-content;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.wrapper {
+    background-color: var(--color-behind-container);
+    /* width: 117rem; */
+    /* height: 38.3rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.wrapper2 {
+    background-color: var(--color-behind-container);
+    /* width: 117rem; */
+    /* height: 22.5rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+}
+
+.wrapper3 {
+    background-color: var(--color-behind-container);
+    /* width: 117rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6rem;
+    padding: 2rem 0;
+}
+
+.div-header-our_services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.div-header-our_services h2 {
+    color: white;
+    text-align: center;
+    font-family: "Alegreya Sans";
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+.div-header-our_services p,
+.div-services article {
+    color: white;
+    text-align: center;
+    /* font-family: "Helvetica Neue"; */
+    font-size: var(--text-font-size);
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.parallax-get-a-free-quote section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.parallax-get-a-free-quote p {
+    color: white;
+    text-align: center;
+    font-family: "Alegreya Sans";
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 4rem;
+    padding: 2rem 1.5rem;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 6rem;
+}
+
+.parallax-get-a-free-quote a {
+    color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 1.2rem 1.6rem 1.3rem 1.7rem;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+
+    transition: 0.5s;
+}
+
+.parallax-get-a-free-quote a:hover {
+    background-color: white;
+
+    color: #3a4f52a7;
+    mix-blend-mode: hard-light;
+    background-color: #FFF;
+}
+
+.div-services h3 {
+    color: white;
+    text-align: center;
+    font-family: "Alegreya Sans";
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 3.3rem;
+}
+
+.div-services {
+    display: flex;
+    /* height: 20.8rem; */
+    padding: 0px 4.2rem 2rem 4.2rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+
+}
+
+.div-services div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 36rem;
+    height: 18.8rem;
+}
+
+.div-services article {
+    padding: 1.6rem 2rem 2rem 2rem;
+}
+
+.svg-our-services {
+    height: 6rem;
+    width: 6rem;
+}
+
+
+/* & ____________ T E S T I M O N I A L S ___________ */
+
+.testimonials {
+    padding: var(--main-padding);
+    padding-bottom: 60px;
+}
+
+.testimonials-header {
+    display: flex;
+    flex-direction: column;
+    gap: 15.6px;
+    margin-bottom: 60px;
+
+}
+
+.testimonials div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem 3rem;
+    padding: 0 1.5rem;
+
+}
+
+.testi {
+    display: flex;
+    flex-direction: column;
+    width: 36rem;
+    height: 35.5rem;
+}
+
+.testimonials-header h2 {
+    color: var(--color-bluegrey);
+    text-align: center;
+    font-family: "Alegreya Sans";
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+.testimonials-header p {
+    color: var(--color-grey);
+    text-align: center;
+    font-size: var(--text-font-size);
+    font-weight: 400;
+    line-height: 2rem;
+
+}
+
+.testimonials img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 150px;
+}
+
+.testimonials article {
+    color: var(--color-grey);
+    text-align: center;
+    font-size: var(--text-font-size);
+    font-weight: 400;
+    line-height: 2rem;
+    /* width: 30.6rem; */
+
+}
+
+.testimonials span {
+    color: var(--color-grey);
+    text-align: center;
+    font-size: var(--text-font-size);
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.testimonials p {
+    color: var(--color-grey);
+    text-align: center;
+    font-size: var(--text-font-size);
+    font-weight: 400;
+    line-height: 2rem;
+
+}
+
+
+/* % ---- F O O T E R -------- */
+
+
+.div-header-contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.div-header-contact-us h2 {
+    color: white;
+    text-align: center;
+    font-family: "Alegreya Sans";
+    font-size: 3.6rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+
+.div-header-contact-us p {
+    color: white;
+    text-align: center;
+    font-size: var(--text-font-size);
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: white;
+}
+
+input,
+textarea,
+button {
+    color: white;
+    width: 80%;
+    border-radius: 0.5rem;
+    border: 1px solid #CCC;
+    background: rgba(255, 255, 255, 0.00);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.08) inset;
+    padding: 1rem 1.3rem;
+
+}
+
+button {
+    width: fit-content;
+}
+
+footer {
+    background-color: var(--color-footer);
+    padding: var(--main-padding);
+    height: 14rem;
+    color: white;
+}
+
+footer p {
+    font-size: var(--text-font-size);
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+
+/* : ------- M E D I A  Q U E R I E S ------------ */
+
+/* Tablet */
+
+@media screen and (max-width: 76.8rem) {
+
+    .our-latest-works,
+    .from-the-blog,
+    .blog,
+    .grid-container,
+    .parallax-our-services,
+    .parallax-get-a-free-quote,
+    .parallax-contact-us,
+    .testimonials,
+    footer {
+        padding: 5.4rem 1rem;
+    }
+
+    .div-services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .testimonials div {
+        flex-direction: column;
+    }
+}
+
+/* mobile */
+
+@media screen and (max-width: 55rem) {
+    .blog {
+        flex-direction: column;
+    }
+
+}
